@@ -1,0 +1,57 @@
+int senha = 123;
+
+            for (int i = 0; i < 3; i++)
+            {
+
+                Console.WriteLine(" Usuario, digite sua senha ");
+                senha = int.Parse(Console.ReadLine());
+
+                if (senha == 123)
+                {
+                    Console.WriteLine(" Acesso liberado ");
+                    Console.WriteLine(" Aurivam Careca ");
+                }
+                else
+                {
+                    Console.WriteLine(" Acesso negado ");
+                    Console.WriteLine(" Tente Novamente ");
+                }
+            }
+            Console.ReadLine();
+            
+            
+            
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string Nome;
+            int Senha = 123;
+
+            Nome = textBox1.Text;
+            Senha = Convert.ToInt16(textBox2.Text);
+
+            if (Senha == 123)
+            {
+                MessageBox.Show("Acesso Permitido      " + Nome);
+            }
+            else
+            {
+                MessageBox.Show("Acesso Negado      " + Nome);
+            }
+        }
+    }
